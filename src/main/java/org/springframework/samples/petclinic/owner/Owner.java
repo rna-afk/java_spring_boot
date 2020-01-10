@@ -46,6 +46,11 @@ import org.springframework.samples.petclinic.model.Person;
 @Table(name = "owners")
 public class Owner extends Person {
 
+	/**
+	 * Added ID.
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Column(name = "address")
 	@NotEmpty
 	private String address;
